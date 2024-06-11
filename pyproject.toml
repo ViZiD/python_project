@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "python-project"
+version = "0.1.0"
+description = ""
+authors = ["Radik Islamov <vizid1337@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.2.2"
+mypy = "^1.8.0"
+
+[tool.poetry.scripts]
+python_project = "python_project:main"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+check_untyped_defs = true
+ignore_missing_imports = true
+pretty = true

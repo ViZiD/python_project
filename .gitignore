@@ -1,0 +1,8 @@
+*.pyc
+dist
+
+result
+
+.direnv
+.mypy_cache/
+.ruff_cache/
