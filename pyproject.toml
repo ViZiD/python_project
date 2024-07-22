@@ -18,7 +18,7 @@ ruff = "0.2.2"
 mypy = "^1.8.0"
 
 [tool.poetry.scripts]
-python_project = "python_project:main"
+python_project = "python_project:run"
 
 [tool.ruff.lint]
 select = ["E", "F"]
